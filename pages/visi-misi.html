@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visi Misi - SMP Regina Caeli</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-blue-900 text-white p-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold italic">SMP REGINA CAELI</h1>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="../index.html" class="hover:text-yellow-400">Beranda</a></li>
+                <li class="relative group">
+                    <a href="about.html" class="hover:text-yellow-400">Profil</a>
+                    <div class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <a href="sejarah.html" class="block px-4 py-2 hover:bg-gray-100">Sejarah</a>
+                        <a href="visi-misi.html" class="block px-4 py-2 hover:bg-gray-100">Visi Misi</a>
+                    </div>
+                </li>
+                <li class="relative group">
+                    <a href="akademik.html" class="hover:text-yellow-400">Akademik</a>
+                    <div class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <a href="akademik.html#kurikulum" class="block px-4 py-2 hover:bg-gray-100">Kurikulum</a>
+                        <a href="akademik.html#eskul" class="block px-4 py-2 hover:bg-gray-100">Eskul</a>
+                    </div>
+                </li>
+                <li><a href="registration.html" class="hover:text-yellow-400">PPDB</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-400">Kontak</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="bg-blue-800 text-white space-y-2 py-4">
+                <li><a href="../index.html" class="block px-4 py-2 hover:bg-blue-700">Beranda</a></li>
+                <li>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-blue-700">Profil</a>
+                    <ul class="ml-4 space-y-1">
+                        <li><a href="sejarah.html" class="block px-4 py-2 hover:bg-blue-700">Sejarah</a></li>
+                        <li><a href="visi-misi.html" class="block px-4 py-2 hover:bg-blue-700">Visi Misi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="akademik.html" class="block px-4 py-2 hover:bg-blue-700">Akademik</a>
+                    <ul class="ml-4 space-y-1">
+                        <li><a href="akademik.html#kurikulum" class="block px-4 py-2 hover:bg-blue-700">Kurikulum</a></li>
+                        <li><a href="akademik.html#eskul" class="block px-4 py-2 hover:bg-blue-700">Eskul</a></li>
+                    </ul>
+                </li>
+                <li><a href="registration.html" class="block px-4 py-2 hover:bg-blue-700">PPDB</a></li>
+                <li><a href="contact.html" class="block px-4 py-2 hover:bg-blue-700">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mx-auto py-16 px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1523050335392-9ae867749296?auto=format&fit=crop&w=600&q=80" alt="Sekolah" class="rounded-lg shadow-xl">
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold mb-4 border-b-4 border-yellow-500 inline-block">Visi dan Misi Sekolah</h3>
+                <p class="text-lg leading-relaxed mb-4">
+                    SMP Regina Caeli adalah sekolah unggulan yang berkomitmen untuk mencetak lulusan terbaik yang siap bersaing di kancah nasional maupun internasional.
+                </p>
+                <h4 class="font-bold text-xl mt-4">Visi:</h4>
+                <p>Terwujudnya lulusan SMP yang unggul dalam prestasi dan karakter menuju insan pembaharu dunia yang lebih bermartabat.</p>
+                <h4 class="font-bold text-xl mt-4">Misi:</h4>
+                <p>Mendampingi peserta didik untuk menjadi pribadi yang:</p>
+                <ul class="list-disc list-inside">
+                    <li>bertindak menurutt hati nurasi dan menjalankan hidup sebagai ungkapan rasa syukur atas anugerah Tuhan Yang Maha Esa (Soul);</li>
+                    <li>ramah, lemah lembut, gemar merawat, dan mencintai kehidupan dalam persaudaraan sejati dengan sesama manusia, menghargai perbedaan, dan berkepekaan sosial tinggi (heart);</li>
+                    <li>sehat jasmani dan berkecerdasan kinestetis tinggi (kinesthesis);</li>
+                    <li>cerdas, berdaya eksplorasi tinggi, berwawasan luas, kritis, kreatif, komunikatif, kolaboratif, penuh daya cipta, dan berprestasi akademis tinggi (mind)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2026 SMP Regina Caeli. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400">Alamat: Metland Transyogi, Jl. Trans Yogie No.km.1, Cileungsi Kidul, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

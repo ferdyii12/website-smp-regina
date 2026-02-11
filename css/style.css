@@ -1,0 +1,32 @@
+/* Custom styles for the school website */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Scrolling text animation */
+.scrolling-text {
+    animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/* Additional custom styles can be added here */
